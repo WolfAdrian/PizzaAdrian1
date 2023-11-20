@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body> personal
+    <div class="menu">
+        <a href="#header" class="menu-logo"><img src="img/logo.svg" alt="logo"></a>
+        <div class="navigation">
+            <a href="#description" class="nav-item">About us</a>
+            <a href="#popular" class="nav-item">Popular</a>
+            <a href="#chef-info" class="nav-item">Chef</a>
+            <a href="#contact" class="nav-item">Order</a>
+        </div>
+    </div>
+
+    <div class="header" id="header">
+        <div class="header-content">
+            <h1 class="header-title">Pizza Delivery</h1>
+            <a href="#contact" class="order">
+                <button class="order btn">Order</button>
+                <img src="img/delivery_btn_logo.svg" alt="bike" class="bike">
+            </a>
+
+        </div>
+        <div class="header-bg"></div>
+    </div>
+
+    <div class="description" id="description">
+        <h2 class="desc-title">We deliver pizza</h2>
+        <p class="desc-text">
+            Place an order and we will deliver hot pizza to you.
+            30 minutes, or it's free.
+        </p>
+    </div>
+
+    <div class="popular" id="popular">
+        <h2 class="pop-title">The most popular</h2>
+        <div class="popular-card">
+            <img src="img/pizzatomato.png" alt="margarita" class="card-img">
+            <h3 class="card-title">Margherita Pizza</h3>
+            <p class="card-desc">A classic pizza. A great choice for vegetarians</p>
+        </div>
+
+        <div class="popular-card">
+            <img src="img/pizzameat.png" alt="meat" class="card-img">
+            <h3 class="card-title">Meat Lover's Pizza</h3>
+            <p class="card-desc">A maximum amount of meat per a square centimeter of pizza</p>
+        </div>
+
+        <div class="popular-card">
+            <img src="img/pizzacheese.png" alt="4cheese" class="card-img">
+            <h3 class="card-title">Four-cheese Pizza</h3>
+            <p class="card-desc">For those who love cheese, lots of it</p>
+        </div>
+    </div>
+
+    <div class="chef-info" id="chef-info">
+        <img src="img/chef.png" alt="chef" class="chef-img">
+        <div class="chef-desc">
+            <h2 class="chef-title">Our chef is from Italy</h2>
+            <p class="chef-text">His family has been baking pizza for 200 years. He brought his family's recipes to our restaurant. A special method of preparing dough, the best ingredients and the family's experience - all of these make our pizza the best. </p>
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <form>
+            <fieldset>
+                <legend>Contact Data</legend>
+                <input type="text" placeholder="Name" class="personal">
+                <input type="text" class="personal" placeholder="Adress">
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+                <div class="gluten-container">
+                    Gluten Intolerance
+                    <label for="gluten" class="gluten-lb">Yes</label>
+                    <input type="radio" name="gluten" class="gluten" value="">
+                    <label for="gluten" class="gluten-lb">No</label>
+                    <input type="radio" name="gluten" class="gluten" value="">
+                </div>
+
+                <div class="cheese-container">
+                    <label for="cheese-dough" class="cheese-lb">Stuffed Crust</label>
+                    <input type="checkbox" id="cheese-dough" class="cheese-dough" value="hasCheeese">
+                </div>
+                <select class="adress">
+                    <option value="rest-1">The restaurant on Wall St</option>
+                    <option value="rest-2">The restaurant on Stone St</option>
+                    <option value="rest-3">The restaurant on Doyers St</option>
+                </select>
+
+
+                <label for="comment">Comment</label>
+                <textarea name="comment" id="comment"></textarea>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Choose Your Pizzas</legend>
+
+                <label for="pizza1" class="pizza-lb">Margherita</label>
+                <input type="checkbox" class="pizza" id="pizza1" value="marg">
+
+                <label for="pizza2" class="pizza-lb">Pepperoni</label>
+                <input type="checkbox" class="pizza" id="pizza2" value="marg">
+
+                <label for="pizza3" class="pizza-lb">Meat Lover's</label>
+                <input type="checkbox" class="pizza" id="pizza3" value="marg">
+
+                <label for="pizza4" class="pizza-lb">Four-cheese</label>
+                <input type="checkbox" class="pizza" id="pizza4" value="marg">
+
+                <label for="pizza5" class="pizza-lb">Fish</label>
+                <input type="checkbox" class="pizza" id="pizza5" value="marg">
+
+                <label for="pizza6" class="pizza-lb">Sweet</label>
+                <input type="checkbox" class="pizza" id="pizza6" value="marg">
+
+            </fieldset>
+
+        </form>
+        
+        
+    </div>
+    <button class="submit">Order</button>
+</body>
+
+</html>
